@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>  
+  <script language="javascript" type="text/javascript" >
+  
+			var img_0, img_1,img_2,img_3, img_4,img_5,img_6, img_7,img_8,img_9;
+			function preload() {
+				img_0 = loadImage("data/0.jpg"); img_1 = loadImage("data/1.jpg");
+				img_2 = loadImage("data/2.jpg"); img_3 = loadImage("data/3.jpg");
+				img_4 = loadImage("data/4.jpg"); img_5 = loadImage("data/5.jpg");
+				img_6 = loadImage("data/6.jpg"); img_7 = loadImage("data/7.jpg");
+				img_8 = loadImage("data/8.jpg"); img_9 = loadImage("data/9.jpg");
+			}
+			function setup() {
+				createCanvas(140,95);			
+			}	
+			function draw(){
+		
+				var s=second();
+				var s_dec=int(s/10); 
+				var  s_uni=s-s_dec*10;
+			
+				if(s_uni==0) image(img_0,70,0); if(s_uni==1) image(img_1,70,0);
+				if(s_uni==2) image(img_2,70,0); if(s_uni==3) image(img_3,70,0);
+				if(s_uni==4) image(img_4,70,0); if(s_uni==5) image(img_5,70,0);
+				if(s_uni==6) image(img_6,70,0); if(s_uni==7) image(img_7,70,0);
+				if(s_uni==8) image(img_8,70,0); if(s_uni==9) image(img_9,70,0);
+				
+				if(s_dec==0) image(img_0,0,0); if(s_dec==1) image(img_1,0,0);
+				if(s_dec==2) image(img_2,0,0); if(s_dec==3) image(img_3,0,0);
+				if(s_dec==4) image(img_4,0,0); if(s_dec==5) image(img_5,0,0);
+				if(s_dec==6) image(img_6,0,0); if(s_dec==7) image(img_7,0,0);
+				if(s_dec==8) image(img_8,0,0); if(s_dec==9) image(img_9,0,0);		
+			}	
+  </script>
+  <style> body {padding: 0; margin: 0;} </style>
+</head>
+<body>
+</body>
+</html>
